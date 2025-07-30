@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My First Page</h1>
+    </header>
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="Home">
+            <h2>Home</h2>
+                <p> First using technologies like HTML, CSS and JAVASCRIPT.</p>
+                <button class="btn" onclick="showAlert()">Click Me!</button>
+        </section>
+        <section id="About">
+            <h2>About</h2>
+            <p>This is a simple page to demonstrate basic HTML structure.</p>
+        </section>
+        <section id="Contact">    
+            <h2>Contact</h2>
+            <form onsubmit="return submitForm(event)">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" required><br><br>
+                
+                <input type="submit" class="btn" value="submit">
+            </form>
+        </section>    
+    </div>
+</body>
+</html>
